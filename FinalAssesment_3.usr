@@ -1,0 +1,77 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=24
+MinorVersion=1
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=24.1.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=24.1.0.0
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=en-US
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+TR02_ApplyDebitCard=TR02_ApplyDebitCard.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+WebSocketBuffer.h=
+WebSocketCB.c=
+[Modified Actions]
+vuser_init=0
+Action=1
+TR02_ApplyDebitCard=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+TR02_ApplyDebitCard=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+TR02_ApplyDebitCard=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+TR02_ApplyDebitCard=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="TR02_ApplyDebitCard__*delimiter*__TR03_FillingForm__*delimiter*__TR05_ClickOk__*delimiter*__TR06_HomePage__*delimiter*__TR07_InternetBanking__*delimiter*__TR08_Register__*delimiter*__TR08_FillForm"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+TR02_ApplyDebitCard=
+TR03_FillingForm=
+TR05_ClickOk=
+TR06_HomePage=
+TR07_InternetBanking=
+TR08_Register=
+TR08_FillForm=
+[ExtraFilesToParse]
+WebSocketCB.c=
